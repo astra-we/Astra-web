@@ -306,3 +306,37 @@ footer p{
 
   margin-bottom:30px;
 }
+@media(max-width:768px){
+
+  .hero h2{
+
+    font-size:38px;
+  }
+
+  .hero p{
+
+    font-size:18px;
+  }
+
+  .proyectos h2,
+  .sobre h2,
+  footer h2{
+
+    font-size:38px;
+  }
+
+  .card{
+
+    width:90%;
+  }
+
+  .card img{
+
+    height:200px;
+  }
+
+  nav{
+
+    gap:15px;
+  }
+}
