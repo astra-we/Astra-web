@@ -407,26 +407,6 @@ footer p{
   margin-bottom:10px;
 }
 
-
-.card{
-  animation:fadeUp .8s ease;
-}
-
-@keyframes fadeUp{
-
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-
-}
-
-
 .servicios .card{
   padding:30px;
 }
