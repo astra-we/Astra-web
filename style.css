@@ -23,7 +23,6 @@ body{
   text-align:center;
 }
 
-/* HEADER */
 
 header{
 
@@ -53,7 +52,6 @@ h1{
   text-shadow:0 0 25px rgba(138,43,226,0.5);
 }
 
-/* NAV */
 
 nav{
 
@@ -84,7 +82,6 @@ nav a:hover{
   color:#8a2be2;
 }
 
-/* HERO */
 
 .hero{
 
@@ -111,7 +108,6 @@ nav a:hover{
   margin-bottom:40px;
 }
 
-/* BOTON */
 
 .btn{
 
@@ -143,7 +139,6 @@ nav a:hover{
   box-shadow:0 0 35px rgba(138,43,226,0.7);
 }
 
-/* PROYECTOS */
 
 .proyectos{
 
@@ -256,7 +251,6 @@ nav a:hover{
   transform:scale(1.05);
 }
 
-/* SOBRE */
 
 .sobre{
 
@@ -285,7 +279,6 @@ nav a:hover{
   line-height:1.8;
 }
 
-/* FOOTER */
 
 footer{
 
@@ -399,4 +392,60 @@ footer p{
 
 .whatsapp:hover{
   transform:scale(1.1);
+}
+
+.stat{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  min-width:180px;
+  border:1px solid rgba(138,43,226,.2);
+  transition:.3s;
+}
+
+.stat:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(138,43,226,.3);
+}
+
+.stat h3{
+  color:#8a2be2;
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+
+.card{
+  animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+
+.servicios .card{
+  padding:30px;
+}
+
+.servicios .card h3{
+  margin-bottom:15px;
+}
+
+
+nav a,
+.btn,
+.card a,
+.whatsapp{
+  transition:.3s;
 }
