@@ -349,3 +349,54 @@ footer p{
     gap:15px;
   }
 }
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  padding:60px 20px;
+}
+
+.stat{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  min-width:180px;
+}
+
+.stat h3{
+  color:#8a2be2;
+  font-size:2rem;
+}
+
+.servicios{
+  padding:70px 20px;
+}
+
+.servicios h2{
+  font-size:50px;
+  color:#8a2be2;
+  margin-bottom:50px;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  color:white;
+  font-size:1.8rem;
+  box-shadow:0 0 20px rgba(0,0,0,.3);
+  z-index:999;
+}
+
+.whatsapp:hover{
+  transform:scale(1.1);
+}
