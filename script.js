@@ -1,30 +1,39 @@
-const cards = document.querySelectorAll(".card");
+const reveals = document.querySelectorAll(
+  ".porque, .proyectos, .proceso, .sobre, .testimonios"
+);
 
-const observer = new IntersectionObserver((entries) => {
+function mostrarElementos() {
 
-  entries.forEach((entry) => {
+  reveals.forEach(section => {
 
-    if(entry.isIntersecting){
+    const top = section.getBoundingClientRect().top;
 
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
-
-      observer.unobserve(entry.target);
-
+    if (top < window.innerHeight - 100) {
+      section.classList.add("active");
     }
 
   });
 
-}, {
-  threshold: 0.15
-});
+}
 
-cards.forEach((card) => {
+window.addEventListener("scroll", mostrarElementos);
 
-  card.style.opacity = "0";
-  card.style.transform = "translateY(40px)";
-  card.style.transition = "all 0.6s ease";
+mostrarElementos();
 
-  observer.observe(card);
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 50) {
+
+    header.style.background = "rgba(0,0,0,0.95)";
+    header.style.boxShadow = "0 0 25px rgba(138,43,226,.2)";
+
+  } else {
+
+    header.style.background = "rgba(0,0,0,0.85)";
+    header.style.boxShadow = "none";
+
+  }
 
 });
