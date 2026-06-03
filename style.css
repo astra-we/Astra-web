@@ -545,3 +545,21 @@ body::before{
   filter:blur(120px);
   z-index:-1;
 }
+.porque,
+.proyectos,
+.proceso,
+.sobre,
+.testimonios{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.porque.active,
+.proyectos.active,
+.proceso.active,
+.sobre.active,
+.testimonios.active{
+  opacity:1;
+  transform:translateY(0);
+}
