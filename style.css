@@ -563,3 +563,40 @@ body::before{
   opacity:1;
   transform:translateY(0);
 }
+
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  padding:80px 8%;
+}
+
+.stat{
+  background:#161616;
+  padding:25px;
+  border-radius:20px;
+  min-width:200px;
+  text-align:center;
+  border:1px solid rgba(139,92,246,.15);
+}
+
+.stat h3{
+  color:#8b5cf6;
+  font-size:2rem;
+}
+
+.destacado{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.card-destacada{
+  max-width:700px;
+  margin:auto;
+  background:#161616;
+  padding:40px;
+  border-radius:25px;
+  border:1px solid rgba(139,92,246,.2);
+  box-shadow:0 0 30px rgba(139,92,246,.15);
+}
