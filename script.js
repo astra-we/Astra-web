@@ -61,3 +61,51 @@ const mostrarSeccion = () => {
 window.addEventListener("scroll", mostrarSeccion);
 
 mostrarSeccion();
+
+const contadores = document.querySelectorAll(".contador");
+
+const iniciarContadores = () => {
+
+  contadores.forEach(contador => {
+
+    const objetivo = +contador.dataset.target;
+
+    let numero = 0;
+
+    const intervalo = setInterval(() => {
+
+      numero++;
+
+      if(numero >= objetivo){
+
+        numero = objetivo;
+
+        clearInterval(intervalo);
+
+      }
+
+      contador.textContent = numero + (objetivo == 100 ? "%" : "+");
+
+    },20);
+
+  });
+
+}
+
+let iniciado = false;
+
+window.addEventListener("scroll", () => {
+
+  const stats = document.querySelector(".stats");
+
+  const posicion = stats.getBoundingClientRect().top;
+
+  if(posicion < window.innerHeight - 100 && !iniciado){
+
+    iniciado = true;
+
+    iniciarContadores();
+
+  }
+
+});
