@@ -740,3 +740,36 @@ background:#8b5cf6;
 transform:scale(1.05);
 
 }
+
+.tecnologias{
+  padding:80px 20px;
+}
+
+.tecnologias h2{
+  color:#8a2be2;
+  font-size:45px;
+  margin-bottom:40px;
+}
+
+.techs{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:18px;
+}
+
+.techs span{
+  background:rgba(138,43,226,.15);
+  border:1px solid rgba(138,43,226,.4);
+  padding:15px 25px;
+  border-radius:30px;
+  color:white;
+  font-weight:600;
+  transition:.3s;
+}
+
+.techs span:hover{
+  transform:translateY(-5px);
+  background:#8a2be2;
+  box-shadow:0 0 20px rgba(138,43,226,.5);
+}
