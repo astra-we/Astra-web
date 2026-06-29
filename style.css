@@ -163,7 +163,8 @@ h1{
 }
 
 .card{
-
+  position:relative;
+  
   width:320px;
 
   background:rgba(255,255,255,0.05);
@@ -434,14 +435,12 @@ nav a,
 }
 
 .porque,
-.proceso,
-.testimonios{
+.proceso,{
   padding:70px 20px;
 }
 
 .porque h2,
-.proceso h2,
-.testimonios h2{
+.proceso h2,{
   color:#8a2be2;
   font-size:50px;
   margin-bottom:50px;
