@@ -37,3 +37,27 @@ window.addEventListener("scroll", () => {
   }
 
 });
+
+const secciones = document.querySelectorAll(
+".porque, .proyectos, .proceso, .sobre, .stats, .destacado"
+);
+
+const mostrarSeccion = () => {
+
+  secciones.forEach(seccion => {
+
+    const posicion = seccion.getBoundingClientRect().top;
+
+    if(posicion < window.innerHeight - 100){
+
+      seccion.classList.add("active");
+
+    }
+
+  });
+
+}
+
+window.addEventListener("scroll", mostrarSeccion);
+
+mostrarSeccion();
