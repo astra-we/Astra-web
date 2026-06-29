@@ -557,19 +557,25 @@ body::before{
   filter:blur(120px);
   z-index:-1;
 }
+
 .porque,
 .proyectos,
 .proceso,
-.sobre{
+.sobre,
+.stats,
+.destacado{
   opacity:0;
   transform:translateY(40px);
   transition:all .8s ease;
+
 }
 
 .porque.active,
 .proyectos.active,
 .proceso.active,
-.sobre.active{
+.sobre.active,
+.stats.active,
+.destacado.active{
   opacity:1;
   transform:translateY(0);
 }
