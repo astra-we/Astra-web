@@ -694,3 +694,21 @@ cursor:pointer;
 color:white;
 
 }
+
+.card-destacada:hover img{
+
+  transform:scale(1.03);
+
+}
+
+.card-destacada img{
+
+  width:100%;
+
+  border-radius:20px;
+
+  margin-bottom:25px;
+
+  transition:.4s;
+
+  }
