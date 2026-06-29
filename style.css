@@ -11,12 +11,17 @@ body{
   font-family:'Poppins', sans-serif;
 
   background:
-  linear-gradient(
-  to bottom,
-  #050505,
-  #0f0f0f,
-  #161616
-  );
+radial-gradient(
+circle at top right,
+rgba(139,92,246,.12),
+transparent 40%
+),
+linear-gradient(
+to bottom,
+#050505,
+#0f0f0f,
+#161616
+);
 
   color:white;
 
