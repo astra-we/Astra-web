@@ -508,6 +508,7 @@ h1{
 .card:hover{
   transform:translateY(-12px) scale(1.02);
   box-shadow:0 0 40px rgba(138,43,226,.35);
+  position:relative;
 }
 
 .whatsapp{
@@ -599,4 +600,30 @@ body::before{
   border-radius:25px;
   border:1px solid rgba(139,92,246,.2);
   box-shadow:0 0 30px rgba(139,92,246,.15);
+}
+
+.badge{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+background:#8b5cf6;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+font-size:.8rem;
+
+font-weight:700;
+
+z-index:10;
+
+box-shadow:0 0 15px rgba(139,92,246,.4);
+
 }
