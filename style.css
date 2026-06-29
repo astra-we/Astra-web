@@ -676,3 +676,15 @@ display:flex;
 }
 
 }
+
+.menu-btn{
+
+display:none;
+
+font-size:2rem;
+
+cursor:pointer;
+
+color:white;
+
+}
