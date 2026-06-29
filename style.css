@@ -712,3 +712,31 @@ color:white;
   transition:.4s;
 
   }
+
+.btn-github{
+
+display:inline-block;
+
+margin:15px 0 30px;
+
+padding:12px 25px;
+
+border:1px solid #8b5cf6;
+
+border-radius:15px;
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn-github:hover{
+
+background:#8b5cf6;
+
+transform:scale(1.05);
+
+}
