@@ -773,27 +773,3 @@ transform:scale(1.05);
   background:#8a2be2;
   box-shadow:0 0 20px rgba(138,43,226,.5);
 }
-
-@media (max-width: 768px) {
-  header {
-    padding: 15px 5%;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    font-size: clamp(23px, 6vw, 32px);
-    letter-spacing: 1px;
-  }
-
-  .menu-btn {
-    font-size: 1.8rem;
-    padding: 5px;
-  }
-
-  nav {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0;
-  }
-}
